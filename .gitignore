@@ -1,33 +1,74 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ==================================================================
+# ARQUIVO .GITIGNORE COMBINADO PARA PROJETO JAVA + REACT
+# ==================================================================
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Comentários do Git
+.gitattributes
+.gitkeep
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# IDEs e Editores
+.idea/
 .vscode/
+*.iml
+*.iws
+*.ipr
+nbproject/
+
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Arquivos de Log
+*.log
+log/
+logs/
+
+# ==================================================================
+# BACKEND - JAVA / MAVEN / SPRING BOOT
+# ==================================================================
+
+# Pasta de build do Maven
+target/
+
+# Arquivos de build do Gradle (se usar no futuro)
+.gradle
+build/
+
+# Arquivos gerados pelo Eclipse
+.classpath
+.project
+.settings/
+
+# Arquivos sensíveis de configuração
+# NUNCA comitar senhas ou chaves de API
+application.properties
+application-*.properties
+
+
+# ==================================================================
+# FRONTEND - NODE.JS / REACT / VITE
+# ==================================================================
+
+# Pasta de dependências do Node.js
+node_modules/
+
+# Pasta de build de produção do frontend
+dist/
+.dist/
+build/
+
+# Arquivos de log do NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de ambiente com segredos
+.env
+.env.local
+.env.*.local
+
+# Cache de ferramentas
+.npm
+.vite/
+.yarn/

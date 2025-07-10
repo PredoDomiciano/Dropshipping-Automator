@@ -24,7 +24,7 @@ public class Product {
     private String description; // DESCRIÇÃO (novo)
 
     @Column(nullable = false)
-    private double price; // Preço de venda
+    private BigDecimal price; // Preço de venda
 
     @Column(nullable = false)
     private String category; // CATEGORIA (novo)
@@ -43,5 +43,5 @@ public class Product {
     private String supplierUrl; // URL no fornecedor
 
     @Column
-    private double supplierPrice; // Preço no fornecedor
+    private BigDecimal supplierPrice; // Preço no fornecedor
 }
